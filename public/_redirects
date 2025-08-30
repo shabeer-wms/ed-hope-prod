@@ -1,0 +1,11 @@
+# _redirects — place in public/ to be picked up by Netlify/Cloudflare Pages
+
+# Example permanent redirects
+/old                 /new                          301
+/docs/*              /documentation/:splat         301
+
+# Proxy API requests to an external service (update the host)
+/api/*              https://api.example.com/:splat 200
+
+# Single Page App fallback (keep last)
+/*                  /index.html                    200
