@@ -112,6 +112,44 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* BTech Credit Transfer & Complete Arrears Section */}
+      <section className="py-16 bg-gradient-to-br from-primary-50 via-accent-50 to-primary-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-primary-800 mb-4">
+              BTech Credit Transfer & Complete Arrears
+            </h2>
+            <p className="text-lg text-primary-700 max-w-2xl mx-auto">
+              Seamlessly transfer your BTech credits and clear all your arrears with our expert guidance and support. We help you continue your education journey without interruption, ensuring a smooth transition and successful completion of your degree.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div className="bg-white rounded-2xl shadow-xl p-8 border border-primary-100">
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-center text-lg text-primary-800 font-medium"><CheckCircle className="h-6 w-6 text-accent-500 mr-3" />Guidance for BTech credit transfer between universities</li>
+                <li className="flex items-center text-lg text-primary-800 font-medium"><CheckCircle className="h-6 w-6 text-accent-500 mr-3" />Support for completing pending arrears and backlogs</li>
+                <li className="flex items-center text-lg text-primary-800 font-medium"><CheckCircle className="h-6 w-6 text-accent-500 mr-3" />Personalized counseling and documentation assistance</li>
+                <li className="flex items-center text-lg text-primary-800 font-medium"><CheckCircle className="h-6 w-6 text-accent-500 mr-3" />Fast-track your graduation process</li>
+                <li className="flex items-center text-lg text-primary-800 font-medium"><CheckCircle className="h-6 w-6 text-accent-500 mr-3" />Expert faculty and legal support</li>
+              </ul>
+              <Link
+                to="/admissions"
+                className="inline-flex items-center px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-bold rounded-lg transition-all duration-300 shadow-lg text-lg"
+              >
+                Get Started
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </div>
+            <div className="flex justify-center">
+              <img
+                src="https://images.pexels.com/photos/256401/pexels-photo-256401.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="BTech Credit Transfer"
+                className="rounded-2xl shadow-2xl w-full max-w-md border-4 border-primary-200"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Introduction Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
