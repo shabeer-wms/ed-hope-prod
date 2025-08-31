@@ -36,7 +36,6 @@ const HomePage = () => {
     },
     {
       name: "Michael Chen",
-      course: "Study Abroad Program",
       achievement: "Full Scholarship",
       university: "MIT",
       image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=300"
@@ -93,7 +92,6 @@ const HomePage = () => {
             <div className="relative">
               <img
                 src="https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Students studying"
                 className="rounded-2xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl">
@@ -146,42 +144,6 @@ const HomePage = () => {
                 alt="BTech Credit Transfer"
                 className="rounded-2xl shadow-2xl w-full max-w-md border-4 border-primary-200"
               />
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* Introduction Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                Welcome to Edhop Education
-              </h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Since our establishment, Edhop Education has been at the forefront of providing quality education and training services. We specialize in IELTS preparation, study abroad consultancy, and skill development programs that prepare students for global success.
-              </p>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Our mission is simple: to bridge the gap between local talent and global opportunities through innovative teaching methods and personalized guidance.
-              </p>
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
-                  <p className="text-3xl font-bold text-primary-600">5000+</p>
-                  <p className="text-gray-600">Students Trained</p>
-                </div>
-                <div className="text-center">
-                  <p className="text-3xl font-bold text-primary-600">98%</p>
-                  <p className="text-gray-600">Success Rate</p>
-                </div>
-              </div>
-            </div>
-            <div className="space-y-4">
-              {features.map((feature, index) => (
-                <div key={index} className="flex items-center space-x-3">
-                  <CheckCircle className="h-6 w-6 text-accent-500" />
-                  <span className="text-gray-700 font-medium">{feature}</span>
-                </div>
-              ))}
             </div>
           </div>
         </div>
