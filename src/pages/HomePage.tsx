@@ -5,22 +5,22 @@ import { BookOpen, Users, Award, Globe, ArrowRight, Star, CheckCircle } from 'lu
 const HomePage = () => {
   const highlights = [
     {
-      icon: <BookOpen className="h-8 w-8 text-primary-600" />,
+      icon: <BookOpen className="h-8 w-8 text-accent-600" />,
       title: "Expert Training",
       description: "World-class IELTS and language training programs"
     },
     {
-      icon: <Globe className="h-8 w-8 text-primary-600" />,
+      icon: <Globe className="h-8 w-8 text-accent-600" />,
       title: "Study Abroad",
       description: "Comprehensive guidance for international education"
     },
     {
-      icon: <Award className="h-8 w-8 text-primary-600" />,
+      icon: <Award className="h-8 w-8 text-accent-600" />,
       title: "100% Success Rate",
       description: "Proven track record of student achievements"
     },
     {
-      icon: <Users className="h-8 w-8 text-primary-600" />,
+      icon: <Users className="h-8 w-8 text-accent-600" />,
       title: "Expert Faculty",
       description: "Experienced instructors with international exposure"
     }
@@ -61,12 +61,12 @@ const HomePage = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary-900 via-primary-800 to-primary-700 text-white overflow-hidden">
+    <section className="relative bg-gradient-to-br from-primary-900 via-primary-800 to-accent-500 text-white overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-              <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
+              <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-white">
                 Empowering Students for 
                 <span className="text-accent-400"> Global Opportunities</span>
               </h1>
@@ -101,7 +101,7 @@ const HomePage = () => {
                   </div>
                   <div>
                     <p className="text-2xl font-bold text-primary-900">98%</p>
-                    <p className="text-sm text-gray-600">Success Rate</p>
+                    <p className="text-sm text-neutral-600">Success Rate</p>
                   </div>
                 </div>
               </div>
@@ -111,28 +111,28 @@ const HomePage = () => {
       </section>
 
       {/* BTech Credit Transfer & Complete Arrears Section */}
-      <section className="py-16 bg-gradient-to-br from-primary-50 via-accent-50 to-primary-100">
+    <section className="py-16 bg-gradient-to-br from-primary-50 via-primary-50 to-primary-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-primary-800 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-primary-900 mb-4">
               BTech Credit Transfer & Complete Arrears
             </h2>
-            <p className="text-lg text-primary-700 max-w-2xl mx-auto">
+            <p className="text-lg text-primary-800 max-w-2xl mx-auto">
               Seamlessly transfer your BTech credits and clear all your arrears with our expert guidance and support. We help you continue your education journey without interruption, ensuring a smooth transition and successful completion of your degree.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <div className="bg-white rounded-2xl shadow-xl p-8 border border-primary-100">
+            <div className="bg-white rounded-2xl shadow-xl p-8 border border-primary-200">
               <ul className="space-y-4 mb-8">
-                <li className="flex items-center text-lg text-primary-800 font-medium"><CheckCircle className="h-6 w-6 text-accent-500 mr-3" />Guidance for BTech credit transfer between universities</li>
-                <li className="flex items-center text-lg text-primary-800 font-medium"><CheckCircle className="h-6 w-6 text-accent-500 mr-3" />Support for completing pending arrears and backlogs</li>
-                <li className="flex items-center text-lg text-primary-800 font-medium"><CheckCircle className="h-6 w-6 text-accent-500 mr-3" />Personalized counseling and documentation assistance</li>
-                <li className="flex items-center text-lg text-primary-800 font-medium"><CheckCircle className="h-6 w-6 text-accent-500 mr-3" />Fast-track your graduation process</li>
-                <li className="flex items-center text-lg text-primary-800 font-medium"><CheckCircle className="h-6 w-6 text-accent-500 mr-3" />Expert faculty and legal support</li>
+                <li className="flex items-center text-lg text-primary-900 font-medium"><CheckCircle className="h-6 w-6 text-accent-500 mr-3" />Guidance for BTech credit transfer between universities</li>
+                <li className="flex items-center text-lg text-primary-900 font-medium"><CheckCircle className="h-6 w-6 text-accent-500 mr-3" />Support for completing pending arrears and backlogs</li>
+                <li className="flex items-center text-lg text-primary-900 font-medium"><CheckCircle className="h-6 w-6 text-accent-500 mr-3" />Personalized counseling and documentation assistance</li>
+                <li className="flex items-center text-lg text-primary-900 font-medium"><CheckCircle className="h-6 w-6 text-accent-500 mr-3" />Fast-track your graduation process</li>
+                <li className="flex items-center text-lg text-primary-900 font-medium"><CheckCircle className="h-6 w-6 text-accent-500 mr-3" />Expert faculty and legal support</li>
               </ul>
               <Link
                 to="/admissions"
-                className="inline-flex items-center px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-bold rounded-lg transition-all duration-300 shadow-lg text-lg"
+                className="inline-flex items-center px-8 py-4 bg-accent-500 hover:bg-accent-600 text-white font-bold rounded-lg transition-all duration-300 shadow-lg text-lg"
               >
                 Get Started
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -150,13 +150,13 @@ const HomePage = () => {
       </section>
 
       {/* Highlights Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-neutral-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-primary-900 mb-4">
               Why Choose Edhop Education?
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
               We provide comprehensive solutions for all your educational needs with a focus on excellence and innovation.
             </p>
           </div>
@@ -167,8 +167,8 @@ const HomePage = () => {
                 className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center"
               >
                 <div className="flex justify-center mb-4">{highlight.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{highlight.title}</h3>
-                <p className="text-gray-600">{highlight.description}</p>
+                <h3 className="text-xl font-semibold text-primary-900 mb-3">{highlight.title}</h3>
+                <p className="text-neutral-800">{highlight.description}</p>
               </div>
             ))}
           </div>
@@ -179,10 +179,10 @@ const HomePage = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-primary-900 mb-4">
               Student Success Stories
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-neutral-800">
               Real achievements from our incredible students
             </p>
           </div>
@@ -198,8 +198,8 @@ const HomePage = () => {
                     alt={story.name}
                     className="w-20 h-20 rounded-full mx-auto mb-4 object-cover border-4 border-white shadow-md"
                   />
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{story.name}</h3>
-                  <p className="text-primary-600 font-medium mb-2">{story.course}</p>
+                  <h3 className="text-xl font-bold text-primary-900 mb-2">{story.name}</h3>
+                  <p className="text-accent-600 font-medium mb-2">{story.course}</p>
                   <div className="flex justify-center mb-2">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
@@ -211,7 +211,7 @@ const HomePage = () => {
                   {story.achievement && (
                     <p className="text-lg font-semibold text-accent-600 mb-1">{story.achievement}</p>
                   )}
-                  <p className="text-gray-600">{story.university}</p>
+                  <p className="text-neutral-700">{story.university}</p>
                 </div>
               </div>
             ))}
@@ -255,12 +255,12 @@ const HomePage = () => {
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
             Ready to Start Your Journey?
           </h2>
-          <p className="text-xl text-accent-100 mb-8">
+          <p className="text-xl text-white mb-8 opacity-90">
             Join thousands of successful students and take the first step towards your global dreams.
           </p>
           <Link
             to="/admissions"
-            className="inline-flex items-center px-8 py-4 bg-white text-accent-600 hover:bg-gray-100 font-bold rounded-lg transition-colors shadow-lg"
+            className="inline-flex items-center px-8 py-4 bg-white text-accent-600 hover:bg-neutral-100 font-bold rounded-lg transition-colors shadow-lg"
           >
             Apply Today
             <ArrowRight className="ml-2 h-5 w-5" />
