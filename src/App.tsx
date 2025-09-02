@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -9,10 +9,19 @@ import AdmissionsPage from './pages/AdmissionsPage';
 import GalleryPage from './pages/GalleryPage';
 import ContactPage from './pages/ContactPage';
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [pathname]);
+  return null;
+}
+
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-gray-50 font-poppins">
+      <ScrollToTop />
+      <div className="min-h-screen bg-neutral-50 font-poppins">
         <Header />
         <main>
           <Routes>
