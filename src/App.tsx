@@ -6,7 +6,6 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import CoursesPage from './pages/CoursesPage';
 import AdmissionsPage from './pages/AdmissionsPage';
-import GalleryPage from './pages/GalleryPage';
 import ContactPage from './pages/ContactPage';
 
 function ScrollToTop() {
@@ -29,7 +28,6 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/courses" element={<CoursesPage />} />
             <Route path="/admissions" element={<AdmissionsPage />} />
-            <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>

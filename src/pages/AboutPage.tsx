@@ -90,46 +90,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Director's Message */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <img
-                src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="Director"
-                className="rounded-2xl shadow-xl w-full max-w-md mx-auto"
-              />
-            </div>
-            <div>
-              <div className="mb-6">
-                <h2 className="text-3xl font-bold text-gray-900 mb-2">Director's Message</h2>
-                <p className="text-primary-600 font-semibold">Dr. Rajesh Kumar, Ph.D. Education</p>
-              </div>
-              <div className="space-y-4 text-gray-700 leading-relaxed">
-                <p>
-                  "At Edhop Education, we believe that every student has the potential to achieve greatness on the global stage. 
-                  Our commitment goes beyond just teaching - we nurture, guide, and inspire our students to reach their highest potential."
-                </p>
-                <p>
-                  "With over 15 years of experience in international education, I have witnessed countless success stories. 
-                  Each student who walks through our doors brings unique dreams and aspirations, and it is our privilege to 
-                  help them transform those dreams into reality."
-                </p>
-                <p>
-                  "Our dedicated team of experts ensures that every student receives personalized attention and world-class training. 
-                  We are not just an institution; we are your partners in success."
-                </p>
-              </div>
-              <div className="mt-8 flex items-center space-x-4">
-                <Heart className="h-6 w-6 text-accent-500" />
-                <span className="text-gray-600 italic">"Education is the passport to the future"</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+    
       {/* Accreditations */}
       <section className="py-16 bg-primary-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
