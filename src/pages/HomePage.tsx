@@ -74,24 +74,12 @@ const HomePage = () => {
                 Join thousands of successful students who have achieved their dreams through our comprehensive education programs and expert guidance.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  to="/admissions"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-accent-500 hover:bg-accent-600 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
-                >
-                  Apply Now
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-                <Link
-                  to="/courses"
-                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-primary-900 font-semibold rounded-lg transition-all duration-300"
-                >
-                  Explore Courses
-                </Link>
+                
               </div>
             </div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="https://images.pexels.com/photos/7944064/pexels-photo-7944064.jpeg?auto=compress&cs=tinysrgb&w=600"
                 className="rounded-2xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl">
@@ -130,17 +118,11 @@ const HomePage = () => {
                 <li className="flex items-center text-lg text-primary-900 font-medium"><CheckCircle className="h-6 w-6 text-accent-500 mr-3" />Fast-track your graduation process</li>
                 <li className="flex items-center text-lg text-primary-900 font-medium"><CheckCircle className="h-6 w-6 text-accent-500 mr-3" />Expert faculty and legal support</li>
               </ul>
-              <Link
-                to="/admissions"
-                className="inline-flex items-center px-8 py-4 bg-accent-500 hover:bg-accent-600 text-white font-bold rounded-lg transition-all duration-300 shadow-lg text-lg"
-              >
-                Get Started
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+              
             </div>
             <div className="flex justify-center">
               <img
-                src="https://images.pexels.com/photos/256401/pexels-photo-256401.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src="https://images.pexels.com/photos/267582/pexels-photo-267582.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="BTech Credit Transfer"
                 className="rounded-2xl shadow-2xl w-full max-w-md border-4 border-primary-200"
               />
@@ -175,50 +157,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Success Stories */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-primary-900 mb-4">
-              Student Success Stories
-            </h2>
-            <p className="text-lg text-neutral-800">
-              Real achievements from our incredible students
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {successStories.map((story, index) => (
-              <div
-                key={index}
-                className="bg-gradient-to-br from-primary-50 to-accent-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-              >
-                <div className="text-center">
-                  <img
-                    src={story.image}
-                    alt={story.name}
-                    className="w-20 h-20 rounded-full mx-auto mb-4 object-cover border-4 border-white shadow-md"
-                  />
-                  <h3 className="text-xl font-bold text-primary-900 mb-2">{story.name}</h3>
-                  <p className="text-accent-600 font-medium mb-2">{story.course}</p>
-                  <div className="flex justify-center mb-2">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
-                    ))}
-                  </div>
-                  {story.score && (
-                    <p className="text-2xl font-bold text-accent-600 mb-1">{story.score}</p>
-                  )}
-                  {story.achievement && (
-                    <p className="text-lg font-semibold text-accent-600 mb-1">{story.achievement}</p>
-                  )}
-                  <p className="text-neutral-700">{story.university}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      /
       {/* Featured Campus Image */}
       <section className="py-16 bg-primary-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -230,17 +169,11 @@ const HomePage = () => {
               <p className="text-xl text-primary-100 mb-8 leading-relaxed">
                 Experience world-class education in our state-of-the-art facilities equipped with the latest technology and resources to enhance your learning journey.
               </p>
-              <Link
-                to="/gallery"
-                className="inline-flex items-center px-6 py-3 bg-accent-500 hover:bg-accent-600 text-white font-semibold rounded-lg transition-colors"
-              >
-                View Gallery
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+            
             </div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/159490/yale-university-landscape-universities-schools-159490.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="https://images.pexels.com/photos/289738/pexels-photo-289738.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="Campus view"
                 className="rounded-2xl shadow-2xl"
               />
@@ -258,13 +191,7 @@ const HomePage = () => {
           <p className="text-xl text-white mb-8 opacity-90">
             Join thousands of successful students and take the first step towards your global dreams.
           </p>
-          <Link
-            to="/admissions"
-            className="inline-flex items-center px-8 py-4 bg-white text-accent-600 hover:bg-neutral-100 font-bold rounded-lg transition-colors shadow-lg"
-          >
-            Apply Today
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Link>
+          
         </div>
       </section>
     </div>
