@@ -37,7 +37,7 @@ const Footer = () => {
                 <Facebook className="h-5 w-5" />
                 </a>
                 <a
-                href="https://web.whatsapp.com/send?phone=919946907624&text="
+                href="https://web.whatsapp.com/send?phone=919037346234&text="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-accent-400 hover:text-white transition-colors"
@@ -54,15 +54,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-top space-x-1">
                 <MapPin className="h-5 w-5 text-accent-400 mt-1 flex-shrink-0" />
-                <span className="text-primary-100">ALFA TOWER, near Korambayil Hospital, Vellarangal, Manjeri, Kerala 676122</span>
+                <span className="text-primary-100">EDHOP Education, City Centre, Pattambi Road Perinthalmanna</span>
               </div>
               <div className="flex items-center space-x-3 justify-end">
                 <Phone className="h-5 w-5 text-accent-400" />
-                <span className="text-primary-100">919746864111</span>
+                <span className="text-primary-100">+91 90373 46234</span>
               </div>
               <div className="flex items-center space-x-3 justify-end">
                 <Mail className="h-5 w-5 text-accent-400" />
-                <span className="text-primary-100">info@edutalim.com</span>
+                <span className="text-primary-100">Info@edhop.in</span>
               </div>
             </div>
           </div>
