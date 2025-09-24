@@ -14,17 +14,17 @@ const ContactPage = () => {
     {
       icon: <MapPin className="h-6 w-6" />,
       title: "Address",
-      details: ["ALFA TOWER, College Rd","near Korambayil Hospital,", "Vellarangal, Manjeri, Kerala 676122"]
+      details: ["EDHOP Education, City Centre, Pattambi Road Perinthalmanna"]
     },
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Phone",
-      details: ["+9197468641115"]
+      details: ["9037346234"]
     },
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
-      details: ["info@edutalim.com"]
+      details: ["Info@edhop.in"]
     },
     {
       icon: <Clock className="h-6 w-6" />,
