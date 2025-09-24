@@ -1,4 +1,3 @@
-import React from 'react';
 import { Instagram, Facebook, MessageCircle, Mail, Phone, MapPin } from 'lucide-react';
 import logolight from '../assets/edhop-logo-light.png';
 
