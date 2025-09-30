@@ -7,6 +7,7 @@ import AboutPage from './pages/AboutPage';
 import CoursesPage from './pages/CoursesPage';
 import AdmissionsPage from './pages/AdmissionsPage';
 import ContactPage from './pages/ContactPage';
+import BtechCreditTransferPage from './pages/BtechCreditTransferPage';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -28,6 +29,7 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/courses" element={<CoursesPage />} />
             <Route path="/admissions" element={<AdmissionsPage />} />
+            <Route path="/btech-credit-transfer" element={<BtechCreditTransferPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>

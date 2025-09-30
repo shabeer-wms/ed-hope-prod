@@ -19,7 +19,7 @@ const ContactPage = () => {
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Phone",
-      details: ["9037346234"]
+      details: ["+91 90373 46234"]
     },
     {
       icon: <Mail className="h-6 w-6" />,
@@ -95,19 +95,17 @@ const ContactPage = () => {
             {/* Map & Additional Info */}
             <div className="space-y-8">
               {/* Google Map Embed */}
-              <div className="bg-white p-2 rounded-2xl shadow-lg">
-                <div className="aspect-w-16 aspect-h-12">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15659.544996834455!2d76.10603878414967!3d11.12184892946567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6377739bc1a1f%3A0x69f88e1cc425fc7c!2sEDUTALIM%20INTERNATIONAL%20EDUCATION%20ANNEX!5e0!3m2!1sen!2sus!4v1757521147760!5m2!1sen!2sus"
-                    width="210%"
-                    height="300"
-                    style={{ border: 0, borderRadius: '12px' }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Edhop Education Location"
-                  />
-                </div>
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15659.544996834455!2d76.10603878414967!3d11.12184892946567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6377739bc1a1f%3A0x69f88e1cc425fc7c!2sEDUTALIM%20INTERNATIONAL%20EDUCATION%20ANNEX!5e0!3m2!1sen!2sus!4v1757521147760!5m2!1sen!2sus"
+                  width="100%"
+                  height="350"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Edhop Education Location"
+                />
               </div>
 
               

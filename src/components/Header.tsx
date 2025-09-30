@@ -15,6 +15,7 @@ const Header = () => {
 
 	const navigation = [
 		{ name: 'Home', href: '/' },
+		{ name: 'BTech Credit Transfer', href: '/btech-credit-transfer' },
 		{ name: 'About Us', href: '/about' },
 		{ name: 'Contact', href: '/contact' },
 	];
