@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 import React from 'react';
 import { Instagram, Facebook, MessageCircle, Mail, Phone, MapPinned } from 'lucide-react';
+=======
+import { Instagram, Facebook, MessageCircle, Mail, Phone, MapPin } from 'lucide-react';
+>>>>>>> c7002559c3390a179a24f1a135bfe1198c72f446
 import logolight from '../assets/edhop-logo-light.png';
 
 const Footer = () => {
@@ -64,9 +68,15 @@ const Footer = () => {
                 <Phone className="h-5 w-5 text-accent-400 flex-shrink-0" />
                 <span className="text-primary-100">+91 90373 46234</span>
               </div>
+<<<<<<< HEAD
               <div className="flex items-center space-x-2 justify-end">
                 <Mail className="h-5 w-5 text-accent-400 flex-shrink-0" />
                 <span className="text-primary-100">Info@edhop.in</span>
+=======
+              <div className="flex items-center space-x-3 justify-end">
+                <Mail className="h-5 w-5 text-accent-400" />
+                <span className="text-primary-100">info@edhop.in</span>
+>>>>>>> c7002559c3390a179a24f1a135bfe1198c72f446
               </div>
             </div>
           </div>
