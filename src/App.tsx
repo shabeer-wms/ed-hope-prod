@@ -8,6 +8,7 @@ import CoursesPage from './pages/CoursesPage';
 import AdmissionsPage from './pages/AdmissionsPage';
 import ContactPage from './pages/ContactPage';
 import BtechCreditTransferPage from './pages/BtechCreditTransferPage';
+import DegreeCreditTransferPage from './pages/DegreeCreditTransferPage';
 import CheckEligibilityPage from './pages/CheckEligibilityPage';
 import AdminLoginPage from './pages/AdminLoginPage';
 import AdminDashboardPage from './pages/AdminDashboardPage';
@@ -40,6 +41,7 @@ function App() {
                   <Route path="/courses" element={<CoursesPage />} />
                   <Route path="/admissions" element={<AdmissionsPage />} />
                   <Route path="/btech-credit-transfer" element={<BtechCreditTransferPage />} />
+                  <Route path="/degree-credit-transfer" element={<DegreeCreditTransferPage />} />
                   <Route path="/contact" element={<ContactPage />} />
                   <Route path="/check-eligibility" element={<CheckEligibilityPage />} />
                 </Routes>

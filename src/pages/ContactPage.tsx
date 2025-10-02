@@ -14,7 +14,7 @@ const ContactPage = () => {
     {
       icon: <MapPin className="h-6 w-6" />,
       title: "Address",
-      details: ["EDHOP Education, City Centre, Pattambi Road Perinthalmanna"]
+      details: ["EDHOP Education, City Centre, Pattambi Road, Perinthalmanna"]
     },
     {
       icon: <Phone className="h-6 w-6" />,
@@ -24,7 +24,7 @@ const ContactPage = () => {
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
-      details: ["Info@edhop.in"]
+      details: ["info@edhop.in"]
     },
     {
       icon: <Clock className="h-6 w-6" />,

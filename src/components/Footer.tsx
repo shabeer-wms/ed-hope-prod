@@ -59,7 +59,7 @@ const Footer = () => {
                   <MapPinned className="h-5 w-5 text-accent-400 mt-0.5 flex-shrink-0" />
                   <span className="text-primary-100 text-right">EDHOP Education, City Centre,</span>
                 </div>
-                <span className="text-primary-100 text-right">Pattambi Road Perinthalmanna</span>
+                <span className="text-primary-100 text-right">Pattambi Road, Perinthalmanna</span>
               </div>
               
               <div className="flex items-center space-x-2 justify-end">
@@ -77,7 +77,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-800 mt-8 pt-8 text-center">
           <p className="text-primary-100">
-            © 2025 Edhop Education. All rights reserved. Designed with passion for education.
+            © 2025 Edhop Education. All rights reserved.
           </p>
         </div>
       </div>

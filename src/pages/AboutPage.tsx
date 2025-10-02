@@ -4,8 +4,8 @@ const AboutPage = () => {
   const achievements = [
     { number: "5000+", text: "Students Trained" },
     { number: "98%", text: "Success Rate" },
-    { number: "50+", text: "Countries Reached" },
-    { number: "15+", text: "Years Experience" }
+    { number: "20+", text: "Countries Reached" },
+
   ];
 
   const accreditations = [
@@ -34,7 +34,7 @@ const AboutPage = () => {
           <div className="text-center">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">About Edhop Education</h1>
             <p className="text-xl text-primary-100 max-w-3xl mx-auto">
-              Pioneering excellence in education since 2009, transforming dreams into global opportunities
+              Pioneering excellence in education, transforming dreams into global opportunities
             </p>
           </div>
         </div>
@@ -78,13 +78,15 @@ const AboutPage = () => {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Achievements</h2>
             <p className="text-lg text-gray-600">Numbers that speak for our commitment to excellence</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {achievements.map((achievement, index) => (
-              <div key={index} className="text-center bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                <h3 className="text-4xl font-bold text-primary-600 mb-2">{achievement.number}</h3>
-                <p className="text-gray-600 font-medium">{achievement.text}</p>
-              </div>
-            ))}
+          <div className="flex flex-col items-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl mx-auto">
+              {achievements.map((achievement, index) => (
+                <div key={index} className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow flex flex-col items-center justify-center p-10 min-w-[260px]">
+                  <h3 className="text-5xl font-extrabold text-primary-700 mb-2">{achievement.number}</h3>
+                  <p className="text-lg text-gray-700 font-semibold text-center">{achievement.text}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

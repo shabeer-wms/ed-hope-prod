@@ -8,27 +8,23 @@ const BtechCreditTransferPage = () => {
     const transferProcess = [
         {
             step: 1,
-            title: "Application to University",
-            description: "Apply for admission to your desired university for evaluation of credits. Check eligibility before filling the application form.",
-            icon: <FileText className="h-6 w-6" />
+            title: "Check Eligibility",
+            description: "Ensure you meet the eligibility criteria for credit transfer.",
         },
         {
             step: 2,
-            title: "Upload/Send Transcripts",
-            description: "Upload your previous education transcripts or ask your current institution Registrar to send transcripts to the university.",
-            icon: <Globe className="h-6 w-6" />
+            title: "Submit an Application",
+            description: "Upload your previous education details",
         },
         {
             step: 3,
-            title: "Transcript Assessment",
+            title: "Credit Assessment",
             description: "University checks if courses from previous university match with new university courses and evaluates academic scores.",
-            icon: <BookOpen className="h-6 w-6" />
         },
         {
             step: 4,
             title: "Credit Evaluation",
             description: "Receive notification with details of how many credits can be transferred according to mentioned eligibility criteria.",
-            icon: <CheckCircle className="h-6 w-6" />
         }
     ];
 
@@ -220,28 +216,27 @@ const BtechCreditTransferPage = () => {
             <section className="py-16 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-4">Credit Transfer Process</h2>
-                        <p className="text-lg text-gray-600">Simple steps to transfer your credits and continue your education</p>
+                        <h2 className="text-3xl font-bold text-gray-900">
+                            Simple steps to transfer your credits and continue your education
+                        </h2>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10">
                         {transferProcess.map((step, index) => (
-                            <div key={step.step} className="relative">
-                                <div className="text-center">
-                                    <div className="bg-primary-600 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-lg">
+                            <div key={step.step} className="relative flex flex-col items-center text-center">
+                                {/* Numbered circle with connecting arrow */}
+                                <div className="relative mb-6">
+                                    <div className="bg-primary-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold">
                                         {step.step}
                                     </div>
-                                    <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-primary-600">
-                                        {step.icon}
-                                    </div>
-                                    <h3 className="text-lg font-bold text-gray-900 mb-2">{step.title}</h3>
-                                    <p className="text-gray-600 text-sm">{step.description}</p>
+                                    {index < transferProcess.length - 1 && (
+                                        <ArrowRight className="hidden md:block absolute top-1/2 -translate-y-1/2 -right-28 h-6 w-6 text-gray-300" />
+                                    )}
                                 </div>
-                                {index < transferProcess.length - 1 && (
-                                    <div className="hidden lg:block absolute top-6 left-full w-full">
-                                        <ArrowRight className="h-6 w-6 text-gray-300 mx-auto" />
-                                    </div>
-                                )}
+
+                                {/* Title & description */}
+                                <h3 className="text-2xl font-extrabold text-gray-900 mb-2 mt-2">{step.title}</h3>
+                                <p className="text-gray-600 text-base max-w-xs">{step.description}</p>
                             </div>
                         ))}
                     </div>
@@ -337,12 +332,6 @@ const BtechCreditTransferPage = () => {
                     </div>
 
                     <div className="space-y-6">
-                        <div className="bg-white rounded-xl shadow-lg p-6">
-                            <h3 className="text-lg font-bold text-gray-900 mb-3">How Long Has Been EduAcharya?</h3>
-                            <p className="text-gray-700">
-                                Acharya has been in the education field since 2004. Acharya has incorporated as a private limited company under the Ministry of Corporate Affairs, Government of India in the name of "EduAcharya Institute of Advanced Management & Technology Pvt Ltd" in 2019.
-                            </p>
-                        </div>
 
                         <div className="bg-white rounded-xl shadow-lg p-6">
                             <h3 className="text-lg font-bold text-gray-900 mb-3">What is Inter University Credit Transfer?</h3>
@@ -388,9 +377,9 @@ const BtechCreditTransferPage = () => {
                         </div>
 
                         <div className="bg-white rounded-xl shadow-lg p-6">
-                            <h3 className="text-lg font-bold text-gray-900 mb-3">Does EduAcharya Assist Learners from Beginning to End?</h3>
+                            <h3 className="text-lg font-bold text-gray-900 mb-3">Does Edhop Assist Learners from Beginning to End?</h3>
                             <p className="text-gray-700">
-                                Yes, EduAcharya provides complete assistance from the initial application process through transcript evaluation, credit transfer, and until course completion. Our dedicated coordinators guide students throughout their academic journey.
+                                Yes, Edhop provides complete assistance from the initial application process through transcript evaluation, credit transfer, and until course completion. Our dedicated coordinators guide students throughout their academic journey.
                             </p>
                         </div>
 
@@ -412,13 +401,6 @@ const BtechCreditTransferPage = () => {
                             <h3 className="text-lg font-bold text-gray-900 mb-3">Is Credit Transfer Recognized for Higher Studies in India?</h3>
                             <p className="text-gray-700">
                                 Absolutely. The degrees obtained through credit transfer from our partner universities are fully recognized for higher studies in India, including for admission to postgraduate programs and research courses.
-                            </p>
-                        </div>
-
-                        <div className="bg-white rounded-xl shadow-lg p-6">
-                            <h3 className="text-lg font-bold text-gray-900 mb-3">Are Partner Universities Recognized by WES Canada/USA Credentials?</h3>
-                            <p className="text-gray-700">
-                                Our partner universities are UGC-approved Indian institutions. For international credential recognition, students should verify specific requirements with WES or other credential evaluation services for their intended destination country.
                             </p>
                         </div>
                     </div>
